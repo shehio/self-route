@@ -42,3 +42,19 @@ output "task_definition_revision" {
   description = "Revision of the task definition"
   value       = aws_ecs_task_definition.nginx_task.revision
 }
+
+# ECR Outputs
+output "ecr_repository_url" {
+  description = "URL of the ECR repository"
+  value       = aws_ecr_repository.osrm.repository_url
+}
+
+output "ecr_repository_arn" {
+  description = "ARN of the ECR repository"
+  value       = aws_ecr_repository.osrm.arn
+}
+
+output "ecr_repository_name" {
+  description = "Name of the ECR repository"
+  value       = aws_ecr_repository.osrm.name
+}
