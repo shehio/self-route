@@ -1,5 +1,4 @@
 #!/bin/bash
-
 docker rm -f osrm-container 2>/dev/null || true
 
 docker build -t osrm-routing-service .
