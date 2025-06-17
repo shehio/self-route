@@ -1,4 +1,6 @@
 #!/bin/bash
+set -euo pipefail
+
 mkdir -p /data
 
 echo "Downloading OSM data from $OSRM_PBF_URL"
